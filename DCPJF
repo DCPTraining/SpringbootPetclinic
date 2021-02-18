@@ -23,7 +23,7 @@ pipeline {
       echo "env.GIT_COMMIT"
       echo "${env.GIT_COMMIT}"
     }
-       checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GithubCredentails', url: 'https://github.com/DCPTraining/SpringbootPetclinic.git']]])
+       checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'Github', url: 'https://github.com/DCPTraining/SpringbootPetclinic.git']]])
         
                 
     }
